@@ -6,15 +6,13 @@ using namespace std;
 
 int main(int argc, const char* argv[])
 {
-
-	//Проверяем, что подано нужное количество аргументов 
+ 
 	if (argc < 4)
 	{
 		cout << "Usage: <A> <B> <C>" << endl;
 		return 0;
 	}
 
-	// Переводим в нужный нам формат числа из командной строки 
 	double a = atof(argv[1]);
 	double b = atof(argv[2]);
 	double c = atof(argv[3]);
