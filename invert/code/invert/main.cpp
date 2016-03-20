@@ -87,7 +87,7 @@ public:
 		return pow(-1,rowIndex + columnIndex) * ((factor[0]*factor[3]) - (factor[1]*factor[2]));
 	}
 	
-	double calculateDeterminant_3x3() 
+	double calculateDeterminantThreeXThree() 
 	{
 		double determinant = 0; 
 		
@@ -101,7 +101,7 @@ public:
 	
 	MatrixThreeXThree Invert() 
 	{
-		double matrixDeterminant = calculateDeterminant_3x3();
+		double matrixDeterminant = calculateDeterminantThreeXThree();
 		double resultMatrix[3][3];
 		
 		if ( matrixDeterminant ) 
